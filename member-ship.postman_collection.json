@@ -10,7 +10,20 @@
 			"name": "list",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
 			},
 			"response": []
 		},
@@ -18,7 +31,47 @@
 			"name": "search",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/users/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "name1",
+							"disabled": true
+						},
+						{
+							"key": "surname",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "company_name",
+							"value": "Company7",
+							"disabled": true
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -80,7 +133,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"company_name\": \"Exampldef Company\",\n    \"name\": \"Jdohn\",\n    \"surname\": \"Ddode\",\n    \"email\": \"john.sdodfkse@example.com\",\n    \"phone\": \"123-ddfc5s6-78930\"\n}\n",
+					"raw": "{\n    \"company_name\": \"company1\",\n    \"name\": \"name1up\",\n    \"surname\": \"surname1up\",\n    \"email\": \"name1surname1up@example.com\",\n    \"phone\": \"123-456-780\"\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
